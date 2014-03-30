@@ -23,6 +23,8 @@ nmap <C-j> a<CR><ESC>k$
 highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
+au BufRead,BufNewFile *.rs set filetype=rust
+
 if filereadable(".vim.custom")
     so .vim.custom
 endif
