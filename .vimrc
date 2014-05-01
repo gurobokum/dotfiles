@@ -9,8 +9,8 @@
 
 :colorscheme gummybears
 
-nmap § :NERDTreeToggle<CR>
-nmap ± :NERDTreeMirror<CR>
+nmap ` :NERDTreeToggle<CR>
+nmap ~ :NERDTreeMirror<CR>
 
 nmap . :tabnext<CR>
 nmap , :tabprevious<CR>
