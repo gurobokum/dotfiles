@@ -9,8 +9,8 @@
 
 :colorscheme gummybears
 
-nmap § :NERDTreeToggle<CR>
-nmap ± :NERDTreeMirror<CR>
+nmap ` :NERDTreeToggle<CR>
+nmap ~ :NERDTreeMirror<CR>
 
 nmap . :tabnext<CR>
 nmap , :tabprevious<CR>
@@ -24,6 +24,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
 au BufRead,BufNewFile *.rs set filetype=rust
+au BufRead,BufNewFile *.webidl set filetype=idl
 
 if filereadable(".vim.custom")
     so .vim.custom
