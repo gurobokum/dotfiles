@@ -1,7 +1,16 @@
-Xterm*selectToClipboard: true
+!Xcursor.size: 24
+Xcursor.theme: Neutral_Plus
+
+XTerm*selectToClipboard: true
 XTerm*faceName: "Dejavu Sans Mono:style:Book:size=9:antialis=false"
 XTerm*locale: true
 XTerm*metaSendsEscape: true
 XTerm*renderFont: true
 XTerm*saveLines: 10000
 
+XTerm*background: #0d0c0d
+XTerm*foreground: #ababa4
+
+XTerm*vt100.translations: #override \
+    Ctrl Shift <KeyPress> C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <KeyPress> V: insert-selection(CLIPBOARD)
