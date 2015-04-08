@@ -1,0 +1,5 @@
+PREFIX=~/workspace/opensource/rust/build
+
+export LD_LIBRARY_PATH=$PREFIX/lib/:$LD_LIBRARY_PATH
+export PATH=$PREFIX/bin:$PATH
+export MANPATH=$PREFIX/share/man:$MANPATH
