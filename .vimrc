@@ -33,6 +33,11 @@ au BufRead,BufNewFile *.webidl set filetype=idl
 au BufRead,BufNewFile *.zip set filetype=idl
 au BufRead,BufNewFile *.jsm set filetype=javascript
 
+" Dockerfile
+autocmd BufRead,BufNewFile Dockerfile set ft=Dockerfile
+autocmd BufRead,BufNewFile Dockerfile* setf Dockerfile
+autocmd BufRead,BufNewFile *.dock setf Dockerfile
+
 if filereadable(".vim.custom")
     so .vim.custom
 endif
