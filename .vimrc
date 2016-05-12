@@ -1,3 +1,12 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+call vundle#end()
+
+filetype plugin indent on
+
 :syntax on
 :set number
 :set shiftwidth=4
@@ -6,8 +15,8 @@
 :set expandtab
 :set laststatus=2
 :set smartindent
-set foldmethod=indent
-set modeline
+:set foldmethod=indent
+:set modeline
 
 :colorscheme gummybears
 
@@ -20,8 +29,8 @@ nmap = <C-w>+
 nmap - <C-w>-
 nmap > <C-w>>
 nmap < <C-w><
-nmap <C-j> a<CR><ESC>k$
 nmap <C-[> <C-t><CR>
+nmap <C-j> a<CR><ESC>k$
 
 nnoremap <Space> za
 
@@ -32,12 +41,10 @@ au BufRead,BufNewFile *.rs set filetype=rust
 au BufRead,BufNewFile *.webidl set filetype=idl
 au BufRead,BufNewFile *.zip set filetype=idl
 au BufRead,BufNewFile *.jsm set filetype=javascript
+au BufRead,BufNewFile nginx.conf set filetype=nginx
+au BufRead,BufNewFile *.jelly set filetype=xml
 
 " Dockerfile
 autocmd BufRead,BufNewFile Dockerfile set ft=Dockerfile
 autocmd BufRead,BufNewFile Dockerfile* setf Dockerfile
 autocmd BufRead,BufNewFile *.dock setf Dockerfile
-
-if filereadable(".vim.custom")
-    so .vim.custom
-endif
