@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/jiojiajiu/workspace/topcoder/MomAndPop/server/models'
+let g:netrw_dirhist_2='/home/jiojiajiu/workspace/topcoder/MomAndPop/tests/services'
+let g:netrw_dirhist_3='/home/jiojiajiu/workspace/opensource/python-spidermonkey/spidermonkey'
+let g:netrw_dirhist_4='/home/jiojiajiu/workspace/goldpoisk/frontend/desktop.blocks/page'
+let g:netrw_dirhist_5='/usr/lib64/firefox'
+let g:netrw_dirhist_6='/usr/lib64/firefox/defaults'
+let g:netrw_dirhist_7='/home/jiojiajiu/workspace/dispatchr/dispatchr-node/conf.d'
+let g:netrw_dirhist_8='/home/jiojiajiu/workspace/dispatchr/dispatchr-ctrlsys-meteor/client/views/maps'
+let g:netrw_dirhist_9='/home/jiojiajiu/workspace/dispatchr/dispatchr-ctrlsys-meteor/client/api'
