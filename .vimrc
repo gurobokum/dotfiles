@@ -12,8 +12,8 @@ filetype plugin indent on
 
 :syntax on
 :set number
-:set shiftwidth=4
-:set tabstop=4
+:set shiftwidth=2
+:set tabstop=2
 :set autoindent
 :set expandtab
 :set laststatus=2
