@@ -5,6 +5,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'scrooloose/nerdtree'
+Bundle '~/.vim/bundle/logstash.vim/.git'
+Bundle 'kelan/gyp.vim'
 
 call vundle#end()
 
@@ -20,6 +22,9 @@ filetype plugin indent on
 :set smartindent
 :set foldmethod=indent
 :set modeline
+
+:set exrc
+:set secure
 
 :colorscheme gummybears
 
@@ -40,12 +45,14 @@ nnoremap <Space> za
 highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
-au BufRead,BufNewFile *.rs set filetype=rust
-au BufRead,BufNewFile *.webidl set filetype=idl
-au BufRead,BufNewFile *.zip set filetype=idl
-au BufRead,BufNewFile *.jsm set filetype=javascript
-au BufRead,BufNewFile nginx.conf set filetype=nginx
-au BufRead,BufNewFile *.jelly set filetype=xml
+autocmd BufRead,BufNewFile *.rs set filetype=rust
+autocmd BufRead,BufNewFile *.webidl set filetype=idl
+autocmd BufRead,BufNewFile *.zip set filetype=idl
+autocmd BufRead,BufNewFile *.jsm set filetype=javascript
+autocmd BufRead,BufNewFile nginx.conf,*.nginx.conf set filetype=nginx
+autocmd BufRead,BufNewFile *.jelly set filetype=xml
+autocmd BufRead,BufNewFile *.template,*.j2 set filetype=yaml
+autocmd BufRead,BufNewFile *BUILD* set filetype=bzl
 
 " Dockerfile
 autocmd BufRead,BufNewFile Dockerfile set ft=Dockerfile
