@@ -1,60 +1,7 @@
 set nocompatible
-filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'scrooloose/nerdtree'
-Bundle '~/.vim/bundle/logstash.vim/.git'
-Bundle 'kelan/gyp.vim'
-
-call vundle#end()
-
-filetype plugin indent on
-
-:syntax on
-:set number
-:set shiftwidth=2
-:set tabstop=2
-:set autoindent
-:set expandtab
-:set laststatus=2
-:set smartindent
-:set foldmethod=indent
-:set modeline
-
-:set exrc
-:set secure
-
-:colorscheme gummybears
-
-nmap ` :NERDTreeToggle<CR>
-nmap ~ :NERDTreeMirror<CR>
-
-nmap . :tabnext<CR>
-nmap , :tabprevious<CR>
-nmap = <C-w>+
-nmap - <C-w>-
-nmap > <C-w>>
-nmap < <C-w><
-nmap <C-[> <C-t><CR>
-nmap <C-j> a<CR><ESC>k$
-
-nnoremap <Space> za
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
-
-autocmd BufRead,BufNewFile *.rs set filetype=rust
-autocmd BufRead,BufNewFile *.webidl set filetype=idl
-autocmd BufRead,BufNewFile *.zip set filetype=idl
-autocmd BufRead,BufNewFile *.jsm set filetype=javascript
-autocmd BufRead,BufNewFile nginx.conf,*.nginx.conf set filetype=nginx
-autocmd BufRead,BufNewFile *.jelly set filetype=xml
-autocmd BufRead,BufNewFile *.template,*.j2 set filetype=yaml
-autocmd BufRead,BufNewFile *BUILD* set filetype=bzl
-
-" Dockerfile
-autocmd BufRead,BufNewFile Dockerfile set ft=Dockerfile
-autocmd BufRead,BufNewFile Dockerfile* setf Dockerfile
-autocmd BufRead,BufNewFile *.dock setf Dockerfile
+source ~/.vim/config/plugins.vim
+source ~/.vim/config/general.vim
+source ~/.vim/config/keymap.vim
+source ~/.vim/config/visual.vim
+source ~/.vim/config/tags.vim
