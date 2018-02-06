@@ -1,16 +1,25 @@
 !Xcursor.size: 24
-Xcursor.theme: Neutral_Plus
+XTerm*utf8: 2
+xterm*locale: true
+!Xcursor.theme: Neutral_Plus
 
-XTerm*selectToClipboard: true
-XTerm*faceName: "Dejavu Sans Mono:style:Book:size=9:antialis=false"
-XTerm*locale: true
-XTerm*metaSendsEscape: true
-XTerm*renderFont: true
-XTerm*saveLines: 10000
+xterm*selectToClipboard: true
+!xterm*faceName: Liberation Mono:size=9:antialis=false
+!xterm*faceName: Inconsolata:size=12:antialias=false
+xterm*faceName: Inconsolata:size=12:antialias=false
 
-XTerm*background: #0d0c0d
-XTerm*foreground: #ababa4
+!!xterm*faceNameDoublesize: Droid Sans Fallback:size=9:antialis=false
+!xterm*faceName: DejaVu Sans Mono:style=Book:size=10:antialis=false
+xterm*metaSendsEscape: true
+xterm*renderFont: true
+xterm*saveLines: 10000
+
+!XTerm*background: #0d0c0d
+xterm*background: #000
+xterm*foreground: #ababa4
 
 XTerm*vt100.translations: #override \
     Ctrl Shift <KeyPress> C: copy-selection(CLIPBOARD) \n\
     Ctrl Shift <KeyPress> V: insert-selection(CLIPBOARD)
+
+!XTerm*vt100*translations: #override Shift <Btn1Up>: exec-formatted("chromium '%t'", PRIMARY)
