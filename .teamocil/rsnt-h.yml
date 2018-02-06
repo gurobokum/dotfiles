@@ -1,0 +1,10 @@
+name: RSNT_H
+windows:
+  - name: hurricane
+    root: ~/workspace/jive/resonata/resonata_hurricane
+    panes:
+      - vi
+  - name: hurricane-cli
+    root: ~/workspace/jive/resonata/resonata_hurricane
+    panes:
+      - TZ=UTC resonata.hurricane -s local -vd --nocache

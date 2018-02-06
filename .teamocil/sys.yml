@@ -1,0 +1,16 @@
+name: SYS
+windows:
+  - name: htop
+    panes:
+      - sudo htop
+  - name: openvpn
+    root: ~/workspace/jive
+    panes:
+      - sudo openvpn client.ovpn
+  - name: xo
+    panes:
+      - tail -f ~/crossoverFiles/logs/deskapp.log
+  - name: mongod
+    root: ~/workspace/jive/resonata
+    panes:
+      - mongod --dbpath=./db --nojournal

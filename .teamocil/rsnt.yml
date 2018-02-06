@@ -1,0 +1,19 @@
+name: RSNT
+windows:
+  - name: portal
+    root: ~/workspace/jive/resonata/resonata_portal
+    panes:
+      - vi
+  - name: portal-cli
+    root: ~/workspace/jive/resonata/resonata_portal
+    panes:
+      - TZ=UTC resonata.portal -s local -vd --no-ssl
+
+  - name: mgmt
+    root: ~/workspace/jive/resonata/resonata_mgmt
+    panes:
+      - vi
+  - name: mgmt-cli
+    root: ~/workspace/jive/resonata/resonata_mgmt
+    panes:
+      - TZ=UTC resonata.mgmt -s local -vd
