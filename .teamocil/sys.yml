@@ -9,8 +9,15 @@ windows:
       - sudo openvpn client.ovpn
   - name: xo
     panes:
-      - tail -f ~/crossoverFiles/logs/deskapp.log
-  - name: mongod
-    root: ~/workspace/jive/resonata
+      - tail -f -n100 ~/crossoverFiles/logs/deskapp.log
+  - name: logs
     panes:
-      - mongod --dbpath=./db --nojournal
+      - tail -f /var/log/kernel -n 100
+      - tail -f /var/log/messages -n 100
+  - name: clamav
+    panes:
+      - sudo tail -f /var/log/clamav/clamd.log -n 100
+      - sudo tail -f /var/log/clamav/freshclam.log -n 100
+  - name: nload
+    panes:
+      - nload

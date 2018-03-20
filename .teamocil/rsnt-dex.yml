@@ -1,0 +1,19 @@
+name: RSNT_DEX_C
+windows:
+  - name: compressor
+    root: ~/workspace/jive/resonata/resonata_compressor
+    panes:
+      - vi
+  - name: compressor-cli
+    root: ~/workspace/jive/resonata/resonata_compressor
+    panes:
+      - TZ=UTC resonata.compressor -s local -vd
+
+  - name: dexter
+    root: ~/workspace/jive/resonata/resonata_dexter
+    panes:
+      - vi
+  - name: dexter-cli
+    root: ~/workspace/jive/resonata/resonata_dexter
+    panes:
+      - TZ=UTC resonata.dexter -s local -vd

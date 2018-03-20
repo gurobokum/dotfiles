@@ -1,0 +1,14 @@
+name: TF
+windows:
+  - name: tf-cc
+    root: ~/workspace/opensource/nodejs-tensorflow
+    panes:
+      - vim -S cc.vim
+  - name: tf-cc-cli
+    root: ~/workspace/opensource/nodejs-tensorflow
+  - name: tf-js
+    root: ~/workspace/opensource/nodejs-tensorflow
+    panes:
+      - vim -S js.vim
+  - name: tf-js-cli
+    root: ~/workspace/opensource/nodejs-tensorflow

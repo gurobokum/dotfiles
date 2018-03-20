@@ -1,0 +1,8 @@
+name: TF-OPS
+windows:
+  - name: tf-ops
+    root: ~/workspace/NewMind/tf-ops
+    panes:
+      - vim
+  - name: tf-ops-cli
+    root: ~/workspace/NewMind/tf-ops

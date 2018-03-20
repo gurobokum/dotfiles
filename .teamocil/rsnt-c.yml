@@ -1,0 +1,13 @@
+name: RSNT_C
+windows:
+  - name: celery
+    root: ~/workspace/jive/resonata/resonata_celery
+    panes:
+      - vi
+  - name: celery-cli
+    root: ~/workspace/jive/resonata/resonata_celery
+    layout: main-vertical
+    panes:
+      - TZ=UTC CONF_DISABLE_CACHE=true resonata.celery worker --shard local -l debug
+      - TZ=UTC resonata.celery flower --shard local
+      - TZ=UTC resonata.celery beat --shard local -l debug

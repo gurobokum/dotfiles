@@ -7,7 +7,7 @@ windows:
   - name: portal-cli
     root: ~/workspace/jive/resonata/resonata_portal
     panes:
-      - TZ=UTC resonata.portal -s local -vd --no-ssl
+      - TZ=UTC resonata.portal -s local -vd --no-ssl -r
 
   - name: mgmt
     root: ~/workspace/jive/resonata/resonata_mgmt
@@ -16,4 +16,4 @@ windows:
   - name: mgmt-cli
     root: ~/workspace/jive/resonata/resonata_mgmt
     panes:
-      - TZ=UTC resonata.mgmt -s local -vd
+      - TZ=UTC resonata.mgmt -s local -vd -r

@@ -7,4 +7,4 @@ windows:
   - name: hurricane-cli
     root: ~/workspace/jive/resonata/resonata_hurricane
     panes:
-      - TZ=UTC resonata.hurricane -s local -vd --nocache
+      - TZ=UTC resonata.hurricane -s local -vd --nocache -r
