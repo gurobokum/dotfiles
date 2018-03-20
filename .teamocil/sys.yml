@@ -6,7 +6,7 @@ windows:
   - name: openvpn
     root: ~/workspace/jive
     panes:
-      - sudo openvpn client.ovpn
+      - sudo openvpn --config client.ovpn --script-security 2 --up /etc/openvpn/up.sh
   - name: xo
     panes:
       - tail -f -n100 ~/crossoverFiles/logs/deskapp.log
