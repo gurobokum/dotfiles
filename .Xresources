@@ -4,9 +4,8 @@ xterm*locale: true
 !Xcursor.theme: Neutral_Plus
 
 xterm*selectToClipboard: true
-!xterm*faceName: Liberation Mono:size=9:antialis=false
-!xterm*faceName: Inconsolata:size=12:antialias=false
-xterm*faceName: Inconsolata:size=12:antialias=false
+!xterm*faceName: Liberation Mono:size=10:antialis=false
+xterm*faceName: InconsolataLGC:size=11:antialias=false
 
 !!xterm*faceNameDoublesize: Droid Sans Fallback:size=9:antialis=false
 !xterm*faceName: DejaVu Sans Mono:style=Book:size=10:antialis=false
