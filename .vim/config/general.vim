@@ -12,6 +12,8 @@
 set exrc
 set secure
 
+set sessionoptions+=tabpages,globals
+
 "set colorcolumn=110*
 let g:NERDTreeShowHidden = 1
 
