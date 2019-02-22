@@ -1,0 +1,26 @@
+name: Bazel
+windows:
+  - name: Bazel
+    root: ~/workspace/bazel/bazel/
+    layout: 33bb,212x55,0,0[212x45,0,0,9,212x9,0,46,10] #tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+    panes:
+      - vi
+      - commands:
+        - git status
+        - echo "bazel build //src:bazel" >&1
+  - name: rules_py
+    root: ~/workspace/bazel/rules_python/
+    layout: 33bb,212x55,0,0[212x45,0,0,9,212x9,0,46,10] #tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+    panes:
+      - vi
+      - git status
+  - name: rules_nodejs
+    root: ~/workspace/bazel/rules_nodejs/
+    layout: 33bb,212x55,0,0[212x45,0,0,9,212x9,0,46,10] #tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+    panes:
+      - bash
+      - git status
+  - name: cli
+    root: ~/workspace/bazel/
+    panes:
+      - bash

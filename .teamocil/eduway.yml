@@ -1,0 +1,36 @@
+name: EduWay
+windows:
+  - name: vifm
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/
+    panes:
+      - vifm .
+  - name: SS-vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedSum
+    panes:
+      - vi
+  - name: SS-cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedSum
+    panes:
+      - bash
+      - git status
+  - name: SM-vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedMult
+    panes:
+      - vi
+  - name: SM-cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedMult
+    panes:
+      - bash
+      - git status
+  - name: MC-vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/MemoryCalc
+    panes:
+      - vi
+  - name: MC-cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/MemoryCalc
+    panes:
+      - bash
+      - git status
+  - name: tools
+    panes:
+      - emulator -avd avd1
