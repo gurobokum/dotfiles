@@ -31,6 +31,12 @@ windows:
     panes:
       - bash
       - git status
-  - name: tools
+  - name: SR-vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedReading
     panes:
-      - emulator -avd avd1
+      - vi
+  - name: SR-cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedReading
+    panes:
+      - bash
+      - git status

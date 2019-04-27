@@ -1,0 +1,15 @@
+name: EduWay-ITOps
+windows:
+  - name: vifm
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/
+    panes:
+      - vifm .
+  - name: itops-vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/itops
+    panes:
+      - vi
+  - name: itops-cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/itops
+    panes:
+      - bash
+      - git status
