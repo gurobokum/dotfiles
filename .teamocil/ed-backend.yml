@@ -1,0 +1,19 @@
+name: BACKEND
+windows:
+  - name: fs
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources
+    panes:
+      - vifm .
+  - name: vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/lms-backend
+    panes:
+      - vi
+  - name: cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/lms-backend
+    panes:
+      - npm start
+      - npm run test:int -- --watch
+  - name: docker
+    panes:
+      - s dockerd
+      - docker run -p 8000:8000 amazon/dynamodb-local

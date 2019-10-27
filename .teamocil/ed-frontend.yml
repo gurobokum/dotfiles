@@ -1,0 +1,14 @@
+name: FRONTEND
+windows:
+  - name: fs
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources
+    panes:
+      - vifm .
+  - name: vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/frontend
+    panes:
+      - vi
+  - name: cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/frontend
+    panes:
+      - npm start

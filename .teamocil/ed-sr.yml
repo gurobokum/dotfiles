@@ -1,0 +1,17 @@
+name: EduWay-SR
+windows:
+  - name: vifm
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/
+    panes:
+      - vifm .
+  - name: SR-vim
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedReading
+    layout: 94cb,212x55,0,0[212x45,0,0,16,212x9,0,46{106x9,0,46,17,105x9,107,46,25}] #tmux list-windows -F "#{window_active} #{window_layout}" | grep "^1" | cut -d " " -f 2
+    panes:
+      - vi
+      - git status
+  - name: SR-cli
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/SpeedReading
+    panes:
+      - bash
+      - git status

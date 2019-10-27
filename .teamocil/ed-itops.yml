@@ -9,7 +9,7 @@ windows:
     panes:
       - vi
   - name: itops-cli
-    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/itops
+    root: /home/jiojiajiu/workspace/NewMind/EduWay/sources/itops/terraform
     panes:
       - bash
       - git status
