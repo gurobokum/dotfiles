@@ -10,7 +10,7 @@ Config {
     borderColor = "black",
 
     template = "%cpu% | %memory% * %swap% | %eth0% - %wlan0% }\
-                \{ %battery% | <fc=#ee9a00>%date%</fc> | %VTSB%"
+                \{ %battery% | <fc=#ee9a00>%date%</fc> | %StdinReader%"
     },
     position = Bottom,
     overrideRedirect = True,
@@ -56,6 +56,7 @@ Config {
         ] 10,
 
         Run Memory [] 10,
-        Run Swap [] 10
+        Run Swap [] 10,
+        Run StdinReader
     ]
 }
