@@ -5,20 +5,29 @@ call vundle#begin()
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'Tagbar'
-Plugin '~/.vim/bundle/logstash.vim/.git'
-Plugin 'kelan/gyp.vim'
 Plugin 'tmux-plugins/vim-tmux'
-Plugin '~/.vim/bundle/vimpager/.git'
-Plugin '~/.vim/bundle/typescript-vim/.git'
 Plugin 'junegunn/vim-easy-align'
-Plugin '~/.vim/bundle/vim-vagrant/.git'
-Plugin 'csv.vim'
-Plugin 'git@github.com:vim-scripts/LogViewer.git'
 Plugin 'cespare/vim-toml'
-Plugin 'rust-lang/rust.vim'
+
 Plugin 'Proj'
 Plugin 'taboo.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'itkq/fluentd-vim'
+Plugin 'jparise/vim-graphql'
+Plugin 'neoclide/coc.nvim'
+
+" Typescript/Javascript
+Plugin 'prettier/vim-prettier', {
+   \ 'do': 'yarn install --frozen-lockfile --production',
+   \ 'for': ['javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
+"Python
+Plugin 'psf/black'
+Plugin 'nvie/vim-flake8'
+
+"Rust
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 

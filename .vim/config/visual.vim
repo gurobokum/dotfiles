@@ -1,6 +1,8 @@
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.swo$']
+
 autocmd BufRead,BufNewFile *.rs set filetype=rust
 autocmd BufRead,BufNewFile *.webidl set filetype=idl
 autocmd BufRead,BufNewFile *.zip set filetype=idl
@@ -10,7 +12,7 @@ autocmd BufRead,BufNewFile *.jelly set filetype=xml
 autocmd BufRead,BufNewFile *.template,*.j2 set filetype=yaml
 autocmd BufRead,BufNewFile *BUILD* set filetype=bzl
 autocmd BufRead,BufNewFile Gruntfile set filetype=javascript
-autocmd BufRead,BufNewFile *.vars set filetype=tf
+autocmd BufRead,BufNewFile *.vars,*.tf set filetype=tf
 autocmd BufRead,BufNewFile *.tfstate,*.har set filetype=json
 autocmd BufRead,BufNewFile ~/.kube/config set filetype=yaml
 
@@ -32,4 +34,13 @@ autocmd BufRead,BufNewFile nginx.conf set ts=4 sw=4
 
 autocmd BufRead,BufNewFile xSTANDUP,xPLANS setf markdown
 
-let NERDTreeIgnore = ['\.pyc$', '\.swp$', '\.swo$']
+" Typescript/Javascript
+autocmd BufWritePre *.tsx,*.ts Prettier
+
+" Python
+autocmd BufWritePre *.py Black
+autocmd BufWritePost *.py call flake8#Flake8()
+
+" Rust
+let g:rustfmt_autosave = 1
+
