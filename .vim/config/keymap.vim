@@ -1,5 +1,5 @@
-nmap ` :NERDTreeToggle<CR>
-nmap ~ :NERDTreeFind<CR>
+nmap § :NERDTreeToggle<CR>
+nmap ± :NERDTreeFind<CR>
 
 nmap = <C-w>+
 nmap - <C-w>-
@@ -7,9 +7,9 @@ nmap > <C-w>>
 nmap < <C-w><
 "nmap <C-[> <C-t><CR>
 nmap <C-j> a<CR><ESC>kr
-nmap <Tab> :TagbarToggle<CR>
+"nmap <Tab> :TagbarToggle<CR>
 nmap <C-[> <C-t>
-nmap t :TabooRename 
+nmap t :TabooRename
 "nmap <C-r> :source ~/.vimrc<CR>
 
 " :no[remap]  {lhs} {rhs}		|mapmode-nvo|	*:no*  *:noremap* *:nor*
