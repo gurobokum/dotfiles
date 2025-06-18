@@ -104,6 +104,8 @@ hi  PmenuSbar    guifg=#000000 guibg=#ffffff gui=NONE      ctermfg=0     ctermbg
 hi  Error        guifg=NONE    guibg=NONE    gui=UNDERCURL guisp=#FF6C60 ctermfg=15   ctermbg=88    cterm=NONE
 hi  ErrorMsg     guifg=#e8e8d3 guibg=#902020  gui=BOLD      ctermfg=15    ctermbg=203  cterm=BOLD
 hi  WarningMsg   guifg=#ffffff guibg=#ff8cc2  gui=BOLD      ctermfg=15    ctermbg=203  cterm=BOLD
+hi  TabLineSel                                              ctermfg=7     ctermbg=0    cterm=BOLD
+
 
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg       guifg=#000000  guibg=#C6C5FE gui=BOLD     ctermfg=0 ctermbg=189 cterm=BOLD
