@@ -1,34 +1,58 @@
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin()
 
-call vundle#begin()
+Plug 'rainglow/vim'
+Plug 'andreasvc/vim-256noir'
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'Tagbar'
-Plugin 'tmux-plugins/vim-tmux'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'cespare/vim-toml'
+Plug 'preservim/nerdtree'
+Plug 'preservim/tagbar'
+Plug 'tmux-plugins/vim-tmux'
+Plug 'junegunn/vim-easy-align'
+Plug 'cespare/vim-toml'
+Plug 'bazelbuild/vim-ft-bzl'
 
-Plugin 'Proj'
-Plugin 'taboo.vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'itkq/fluentd-vim'
-Plugin 'jparise/vim-graphql'
-Plugin 'neoclide/coc.nvim'
+"Neo-tree
+Plug 'nvim-neo-tree/neo-tree.nvim', {'branch': 'v3.x'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'MunifTanjim/nui.nvim'
+
+Plug 'gcmt/taboo.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'itkq/fluentd-vim'
+Plug 'jparise/vim-graphql'
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': 'yarn install --frozen-lockfile'}
+":CocInstall coc-tsserver coc-pyright coc-eslint
+":CocInstall coc-prettier
+":CocInstall coc-rust-analyzer
+":CocInstall coc-go
+Plug 'rizzatti/dash.vim'
+Plug 'github/copilot.vim'
+
+Plug 'towolf/vim-helm'
 
 " Typescript/Javascript
-Plugin 'prettier/vim-prettier', {
-   \ 'do': 'yarn install --frozen-lockfile --production',
-   \ 'for': ['javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+"Plug 'prettier/vim-prettier', {
+"   \ 'do': 'yarn install --frozen-lockfile --production',
+"   \ 'for': ['javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 "Python
-Plugin 'psf/black'
-Plugin 'nvie/vim-flake8'
+"Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+"Plug 'psf/black'
+"Plug 'nvie/vim-flake8'
 
 "Rust
-Plugin 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim'
+"Solidity
+Plug 'tomlion/vim-solidity'
+"Tact
+Plug 'tact-lang/tact.vim'
+"Func
+Plug 'gurobokum/vim-func'
+Plug 'gurobokum/vim-tlb'
+" MDX
+Plug 'jxnblk/vim-mdx-js'
+"Prisma
+Plug 'prisma/vim-prisma'
 
-call vundle#end()
-
-filetype plugin indent on
+call plug#end()
